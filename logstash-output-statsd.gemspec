@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
-  s.name            = 'logstash-output-statsd'
+  s.name            = 'logstash-output-dogstatsd'
   s.version         = '4.0.0'
   s.licenses        = ['Apache License (2.0)']
   s.summary         = "Sends metrics using the `statsd` network daemon using dogstatsd-ruby gem"
   s.description     = "This gem is a Logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/logstash-plugin install gemname. This gem is not a stand-alone program"
   s.authors         = ["Elastic", "Wheely"]
   s.email           = 'backend@wheely.com'
-  s.homepage        = "https://github.com/wheely/logstash-output-statsd"
+  s.homepage        = "https://github.com/wheely/logstash-output-dogstatsd"
   s.require_paths = ["lib"]
 
   # Files
