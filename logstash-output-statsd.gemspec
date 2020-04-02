@@ -1,13 +1,12 @@
 Gem::Specification.new do |s|
-
-  s.name            = 'logstash-output-statsd'
-  s.version         = '3.2.0'
+  s.name            = 'logstash-output-dogstatsd'
+  s.version         = '4.0.0'
   s.licenses        = ['Apache License (2.0)']
-  s.summary         = "Sends metrics using the `statsd` network daemon"
+  s.summary         = "Sends metrics using the `statsd` network daemon using dogstatsd-ruby gem"
   s.description     = "This gem is a Logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/logstash-plugin install gemname. This gem is not a stand-alone program"
-  s.authors         = ["Elastic"]
-  s.email           = 'info@elastic.co'
-  s.homepage        = "http://www.elastic.co/guide/en/logstash/current/index.html"
+  s.authors         = ["Elastic", "Wheely"]
+  s.email           = 'backend@wheely.com'
+  s.homepage        = "https://github.com/wheely/logstash-output-dogstatsd"
   s.require_paths = ["lib"]
 
   # Files
@@ -23,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "logstash-core-plugin-api", ">= 1.60", "<= 2.99"
   s.add_runtime_dependency 'logstash-input-generator'
 
-  s.add_runtime_dependency 'statsd-ruby', ['1.4.0']
+  s.add_runtime_dependency 'dogstatsd-ruby', '~> 3.3.0'
 
   s.add_development_dependency 'logstash-devutils'
 end
